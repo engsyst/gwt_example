@@ -97,15 +97,17 @@ public class EditUserForm extends Composite implements KeyUpHandler {
 		login.selectAll();
 		password.setText(this.user.getPassword());
 		List<Role> roles = this.user.getRoles();
+		adminCheckBox.setValue(false);
+		responsibleCheckBox.setValue(false);
+		subscriberCheckBox.setValue(false);
 		if (roles != null && roles.size() > 0) {
 			for (Role role : roles) {
-				if (AppConstants.ROLE_ADMIN.equals(role.getTitle())) {
+				if (AppConstants.ROLE_ADMIN.equals(role.getTitle()))
 					adminCheckBox.setValue(true);
-				} else if (AppConstants.ROLE_RESPONSIBLE.equals(role.getTitle())) {
+				if (AppConstants.ROLE_RESPONSIBLE.equals(role.getTitle())) 
 					responsibleCheckBox.setValue(true);
-				} else if (AppConstants.ROLE_SUBCRIBER.equals(role.getTitle())) {
+				if (AppConstants.ROLE_SUBCRIBER.equals(role.getTitle()))
 					subscriberCheckBox.setValue(true);
-				}
 			}
 		}
 	}
@@ -120,11 +122,13 @@ public class EditUserForm extends Composite implements KeyUpHandler {
 			Role role = new Role();
 			role.setTitle(AppConstants.ROLE_ADMIN);
 			roles.add(new Role());
-		} else if (responsibleCheckBox.getValue()) {
+		}
+		if (responsibleCheckBox.getValue()) {
 			Role role = new Role();
 			role.setTitle(AppConstants.ROLE_RESPONSIBLE);
 			roles.add(new Role());
-		} else if (subscriberCheckBox.getValue()) {
+		} 
+		if (subscriberCheckBox.getValue()) {
 			Role role = new Role();
 			role.setTitle(AppConstants.ROLE_SUBCRIBER);
 			roles.add(new Role());

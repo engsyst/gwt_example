@@ -2,7 +2,7 @@ package org.test.entity;
 
 import java.io.Serializable;
 
-public class Role implements Serializable {
+public class Role extends Entity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private long roleId;

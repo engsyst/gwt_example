@@ -8,8 +8,8 @@ public interface AppConstants extends Constants {
 	
 	// user roles
 	public static final String ROLE_ADMIN = "Администратор";
-	public static final String ROLE_SUBCRIBER = "Ответственный";
-	public static final String ROLE_RESPONSIBLE = "Рассылка";
+	public static final String ROLE_SUBCRIBER = "Рассылка";
+	public static final String ROLE_RESPONSIBLE = "Ответственный";
 	
 	String adminCheckBox_text();
 	String btnSave_html();
