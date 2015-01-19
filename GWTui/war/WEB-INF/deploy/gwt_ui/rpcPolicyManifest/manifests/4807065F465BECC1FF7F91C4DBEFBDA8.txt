@@ -1,0 +1,2 @@
+serviceClass: org.test.client.GreetingService
+path: 4C18DCD5C6553C90750668A685F19ED5.gwt.rpc

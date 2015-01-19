@@ -1,0 +1,6 @@
+/test-classes/
+/gwt-unitCache/
+*.symbolMap
+*.cache.js
+*.gwt.rpc
+/war/WEB-INF/classes/

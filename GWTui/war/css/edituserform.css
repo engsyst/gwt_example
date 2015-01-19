@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+.euf-panel {
+	border: 2px solid silver;
+	margin: 15px;
+}
+
+.gwt-Label {
+	padding: 0 5px;
+	width: 80px;
+}
+.gwt-Label {
+	color: gray;
+	font-weight: 600;
+}
+
+.gwt-TextBox, .gwt-PasswordTextBox {
+  padding: 2px;
+  width: 250px;
+}
+.gwt-TextBox-readonly, .gwt-PasswordTextBox-readonly {
+  color: #888;
+}
+
+.gwt-Label-error, .gwt-TextBox-error {
+  color: #aa7700;
+}
+
+/* 
+
+.euf-userNameLabel, .euf-passwordLabel, 
+.euf-userNameLabel-error, .euf-passwordLabel-error, 
+.euf-userName, .euf-password, 
+.euf-userName-error, .euf-password-error, 
+.euf-btnSend, .euf-btnReset {
+	padding: 0 5px;
+}
+
+.euf-userNameLabel, .euf-passwordLabel {
+	width: 80px;
+	color: white;
+}
+
+.euf-userNameLabel-error, .euf-passwordLabel-error {
+	width: 80px;
+	color: yellow;
+}
+
+.euf-userName, .euf-password {
+	background-color: white;
+}
+
+.euf-userName-error, .euf-password-error {
+	background-color: yellow;
+}
+
+ */
